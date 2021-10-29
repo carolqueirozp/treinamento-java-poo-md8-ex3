@@ -59,12 +59,12 @@ public class Program {
 		
 		
 		if (student.calculateTotalScore() > 60) {
-			System.out.println("FINAL GRADE = " + student.calculateTotalScore());
+			System.out.printf("FINAL GRADE =  %.2f%n", student.calculateTotalScore());
 			System.out.println("PASS");
 		} else {
-			System.out.println("FINAL GRADE = " + student.calculateTotalScore());
+			System.out.printf("FINAL GRADE =  %.2f%n", student.calculateTotalScore());
 			System.out.println("FAILED");
-			System.out.println("MISSING " + student.missingScore() + " POINTS");
+			System.out.printf("MISSING %.2f POINTS%n", student.missingScore());
 		}
 		
 		sc.close();
